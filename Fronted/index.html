@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> JokeBox API </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/modified.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">JokeBox API</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#services">Endpoints</a></li>
+          <li><a href="index.html#pricing">Other pages</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Welcome to <span> JokeBox API</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Delivering laughter one endpoint at a time.<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="btn-get-started">Documentation</a>
+            <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video Tutorial</span></a>
+          </div>
+          <img src="assets/img/hero2.svg" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300" style="height: 300px;">
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Instant Joke Access</a></h4>
+                <p class="description">Easily integrate our API to fetch random jokes or browse by category. Whether you're building an app, website, or just need a laugh, our API provides quick and reliable access to a wide range of jokes.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Extensive API Documentation</a></h4>
+                <p class="description">Explore our detailed documentation to find all available endpoints, parameters, and example requests. We provide clear instructions and code snippets to streamline your integration process.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Built for Developers</a></h4>
+                <p class="description">Designed with developers in mind, our API supports easy integration with robust error handling and scalable performance. Focus on building, and let our API handle the jokes.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">About Our API</p>
+            <h3>Unlocking Humor with Seamless Integration</h3>
+            <p class="fst-italic">
+              Discover the power of our JokeBox API, designed to bring laughter into your applications effortlessly.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Access a vast repository of jokes instantly.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Retrieve jokes by category or get a random joke with ease.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Developer-friendly documentation for smooth integration.</span></li>
+            </ul>
+            <a href="#" class="read-more"><span>Explore API Features</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+    
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="About Company 1">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="About Company 2">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="About Company 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- /About Section -->
+
+    <!-- Clients Section -->
+
+    
+    <!-- /Clients Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Explore what JokeBox API has to offer!</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center">
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  <i class="bi bi-binoculars"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Random Jokes</h4>
+                    <p>
+                      Get a random joke from a wide range of categories such as programming, medical, sports, and more.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  <i class="bi bi-box-seam"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Category-based Jokes</h4>
+                    <p>
+                      Retrieve jokes specific to a chosen category, ensuring you get jokes tailored to your audience.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  <i class="bi bi-brightness-high"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Developer-friendly API</h4>
+                    <p>
+                      Easily integrate the JokeBox API into your applications with comprehensive documentation and support.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- End Tab Nav -->
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="assets/img/tabs-1.jpg" alt="Random Jokes" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+    
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="assets/img/tabs-2.jpg" alt="Category-based Jokes" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+    
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="assets/img/tabs-3.jpg" alt="Developer-friendly API" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- /Features Section -->
+
+    <!-- Features Details Section -->
+    <section id="features-details" class="features-details section">
+
+      <div class="container">
+    
+        <div class="row gy-4 justify-content-between features-item">
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/features-1.jpg" class="img-fluid" alt="Feature Image 1">
+          </div>
+    
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Random Jokes at Your Fingertips</h3>
+              <p>
+                Access a wide range of random jokes instantly. Whether you're looking for a quick laugh or a humorous break,
+                our API delivers fresh jokes across various categories.
+              </p>
+              <a href="#" class="btn more-btn">Learn More</a>
+            </div>
+          </div>
+    
+        </div><!-- End Features Item -->
+    
+        <div class="row gy-4 justify-content-between features-item">
+    
+          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="content">
+              <h3>Category-based Jokes Selection</h3>
+              <p>
+                Choose jokes tailored to specific categories like programming, medical, sports, and more. Our API ensures you
+                find jokes that match your audience's interests effortlessly.
+              </p>
+              <ul>
+                <li><i class="bi bi-easel flex-shrink-0"></i> Explore jokes by category.</li>
+                <li><i class="bi bi-patch-check flex-shrink-0"></i> Enjoy a variety of humorous content.</li>
+                <li><i class="bi bi-brightness-high flex-shrink-0"></i> Get entertained with ease.</li>
+              </ul>
+              <a href="#" class="btn more-btn">Learn More</a>
+            </div>
+    
+          </div>
+    
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/features-2.jpg" class="img-fluid" alt="Feature Image 2">
+          </div>
+    
+        </div><!-- End Features Item -->
+    
+      </div>
+    
+    </section>
+    
+    <!-- /Features Details Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Explore the services offered by our JokeBox API to enhance your applications.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row g-5">
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-activity icon"></i>
+              <div>
+                <h3>Random Joke Retrieval</h3>
+                <p>Retrieve random jokes instantly with our API. Perfect for adding spontaneous humor to your applications.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-broadcast icon"></i>
+              <div>
+                <h3>Category-based Joke Selection</h3>
+                <p>Select jokes based on specific categories such as programming, medical, sports, and more. Tailor your joke content to suit different interests.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="bi bi-easel icon"></i>
+              <div>
+                <h3>Customizable Joke Integration</h3>
+                <p>Integrate customizable jokes into your applications effortlessly. Customize joke categories and content to fit your user base.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <i class="bi bi-bounding-box-circles icon"></i>
+              <div>
+                <h3>Interactive Joke Experience</h3>
+                <p>Enhance user engagement with an interactive joke experience. Keep users entertained with a variety of joke formats and categories.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="bi bi-calendar4-week icon"></i>
+              <div>
+                <h3>Reliable Joke Delivery</h3>
+                <p>Ensure reliable joke delivery with our robust API infrastructure. Enjoy seamless integration and uptime for uninterrupted joke access.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <i class="bi bi-chat-square-text icon"></i>
+              <div>
+                <h3>Support and Documentation</h3>
+                <p>Access comprehensive support and documentation for integrating our API into your applications. Get started quickly with our easy-to-follow guides.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <!-- /Services Section -->
+
+    <!-- More Features Section -->
+    <section id="more-features" class="more-features section">
+
+      <div class="container">
+    
+        <div class="row justify-content-around gy-4">
+    
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Enhanced Features for Unmatched Experience</h3>
+            <p>Explore additional features that elevate the user experience and functionality of our JokeBox API.</p>
+    
+            <div class="row">
+    
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4>Custom Joke Categories</h4>
+                  <p>Create and manage custom joke categories tailored to your application's needs. Easily integrate specific humor themes.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Scalable Infrastructure</h4>
+                  <p>Benefit from a scalable infrastructure that ensures reliable and fast joke delivery even under high traffic conditions.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>API Documentation</h4>
+                  <p>Access comprehensive API documentation with detailed guides and examples to facilitate quick and seamless integration.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Real-time Updates</h4>
+                  <p>Receive real-time updates and enhancements to our API to ensure continuous improvement and compatibility with evolving technologies.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+            </div>
+    
+          </div>
+    
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/features-3.jpg" alt="">
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <!-- /More Features Section -->
+
+    <!-- Pricing Section -->
+    <!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row justify-content-center">
+    
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="faq-container">
+    
+              <div class="faq-item faq-active">
+                <h3>How do I integrate the JokeBox API into my application?</h3>
+                <div class="faq-content">
+                  <p>Integrating the JokeBox API into your application is straightforward. Simply follow our comprehensive API documentation and use our SDKs for quick setup.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item">
+                <h3>What kind of jokes does the JokeBox API provide?</h3>
+                <div class="faq-content">
+                  <p>The JokeBox API offers a wide variety of jokes across different categories, including puns, one-liners, and specific themes you can customize.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item">
+                <h3>Is the JokeBox API scalable for high-traffic applications?</h3>
+                <div class="faq-content">
+                  <p>Yes, the JokeBox API is designed to handle high volumes of requests efficiently. Our infrastructure ensures reliable performance under varying loads.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item">
+                <h3>Can I request new joke categories or features?</h3>
+                <div class="faq-content">
+                  <p>Absolutely! We welcome feedback and feature requests. Contact our support team to suggest new joke categories or additional features you'd like to see.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item">
+                <h3>How often is the JokeBox API updated?</h3>
+                <div class="faq-content">
+                  <p>We strive to update the JokeBox API regularly with new jokes, improvements, and bug fixes. Stay tuned to our developer portal for the latest updates.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item">
+                <h3>Where can I find more documentation and support?</h3>
+                <div class="faq-content">
+                  <p>For more detailed documentation, SDKs, and support, visit our developer portal. Our team is also available to assist you with any technical queries.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+            </div>
+    
+          </div><!-- End Faq Column-->
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    
+    <!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Here's what our users say about JokeBox API!</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "The JokeBox API is incredible! It's easy to use and provides endless laughs. Perfect for our app!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Saul Goodman">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "Using the JokeBox API has made our app more engaging. Our users love the variety of jokes!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Sara Wilsson">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "The JokeBox API is a must-have for any app wanting to add humor. It's reliable and fun!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Jena Karlis">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "The JokeBox API exceeded our expectations. It's easy to integrate and offers great content!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Matt Brandon">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "We integrated the JokeBox API into our app effortlessly. It's a game-changer for user engagement!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="John Larson">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">JokeBox API</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>123 Joke Street</p>
+            <p>New York, NY 10001</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 123 456 7890</span></p>
+            <p><strong>Email:</strong> <span>info@jokeboxapi.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Developer Tools</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for the latest jokes and updates!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Enter your email">
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container text-center mt-4">
+      <p>© <span>2024</span> <strong class="px-1 sitename">JokeBox API</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="#">@JokeBox.API</a>
+      </div>
+    </div>
+  
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
