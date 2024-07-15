@@ -1,7 +1,11 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const path = require('path');
 const jokes = require("./jokesData");
+
+// Serve static files from the Frontend directory
+app.use(express.static(path.join(__dirname, './Frontend')));
 
 
 // Jokes Data 
@@ -54,9 +58,12 @@ function callbackFn2(req,res){
 
 // Request Handlers
 
-app.get("/" , (req , res)=>{
-    res.send("Hello World");
-});
+// Route to serve index.html at the root route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './Frontend/index.html'));
+  });
+
+
 app.get("/api/joke/random",callbackFn1);
 
 app.get("/api/joke/random/:category", callbackFn2);
