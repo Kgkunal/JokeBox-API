@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const jokes = require("./jokesData");
 
+
 // Jokes Data 
 const programmingJokes = require("./programmingJokes");
 const scienceJokes = require("./scienceJokes");
@@ -52,6 +53,10 @@ function callbackFn2(req,res){
 }
 
 // Request Handlers
+
+app.get("/" , (req , res)=>{
+    res.send("Hello World");
+});
 app.get("/api/joke/random",callbackFn1);
 
 app.get("/api/joke/random/:category", callbackFn2);
